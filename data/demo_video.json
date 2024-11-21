@@ -1,0 +1,382 @@
+[
+	{
+		"id": "1",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v1/400/300",
+		"title": "Sample video title 1",
+		"creator": {
+			"username": "user1",
+			"profilePicture": "https://randomuser.me/api/portraits/women/1.jpg"
+		},
+		"statistics": {
+			"views": 101000,
+			"likes": 1100,
+			"dislikes": 55,
+			"comments": 110
+		},
+		"duration": "11:02",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-01T12:00:00"
+	},
+	{
+		"id": "2",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v2/400/300",
+		"title": "Sample video title 2",
+		"creator": {
+			"username": "user2",
+			"profilePicture": "https://randomuser.me/api/portraits/men/2.jpg"
+		},
+		"statistics": {
+			"views": 102000,
+			"likes": 1200,
+			"dislikes": 60,
+			"comments": 120
+		},
+		"duration": "12:04",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-02T12:00:00"
+	},
+	{
+		"id": "3",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v3/400/300",
+		"title": "Sample video title 3",
+		"creator": {
+			"username": "user3",
+			"profilePicture": "https://randomuser.me/api/portraits/women/3.jpg"
+		},
+		"statistics": {
+			"views": 103000,
+			"likes": 1300,
+			"dislikes": 65,
+			"comments": 130
+		},
+		"duration": "13:06",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-03T12:00:00"
+	},
+	{
+		"id": "4",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v4/400/300",
+		"title": "Sample video title 4",
+		"creator": {
+			"username": "user4",
+			"profilePicture": "https://randomuser.me/api/portraits/men/4.jpg"
+		},
+		"statistics": {
+			"views": 104000,
+			"likes": 1400,
+			"dislikes": 70,
+			"comments": 140
+		},
+		"duration": "14:08",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-04T12:00:00"
+	},
+	{
+		"id": "5",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v5/400/300",
+		"title": "Sample video title 5",
+		"creator": {
+			"username": "user5",
+			"profilePicture": "https://randomuser.me/api/portraits/women/5.jpg"
+		},
+		"statistics": {
+			"views": 105000,
+			"likes": 1500,
+			"dislikes": 75,
+			"comments": 150
+		},
+		"duration": "15:10",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-05T12:00:00"
+	},
+	{
+		"id": "6",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v6/400/300",
+		"title": "Sample video title 6",
+		"creator": {
+			"username": "user6",
+			"profilePicture": "https://randomuser.me/api/portraits/men/6.jpg"
+		},
+		"statistics": {
+			"views": 106000,
+			"likes": 1600,
+			"dislikes": 80,
+			"comments": 160
+		},
+		"duration": "16:12",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-06T12:00:00"
+	},
+	{
+		"id": "7",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v7/400/300",
+		"title": "Sample video title 7",
+		"creator": {
+			"username": "user7",
+			"profilePicture": "https://randomuser.me/api/portraits/women/7.jpg"
+		},
+		"statistics": {
+			"views": 107000,
+			"likes": 1700,
+			"dislikes": 85,
+			"comments": 170
+		},
+		"duration": "17:14",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-07T12:00:00"
+	},
+	{
+		"id": "8",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v8/400/300",
+		"title": "Sample video title 8",
+		"creator": {
+			"username": "user8",
+			"profilePicture": "https://randomuser.me/api/portraits/men/8.jpg"
+		},
+		"statistics": {
+			"views": 108000,
+			"likes": 1800,
+			"dislikes": 90,
+			"comments": 180
+		},
+		"duration": "18:16",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-08T12:00:00"
+	},
+	{
+		"id": "9",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v9/400/300",
+		"title": "Sample video title 9",
+		"creator": {
+			"username": "user9",
+			"profilePicture": "https://randomuser.me/api/portraits/women/9.jpg"
+		},
+		"statistics": {
+			"views": 109000,
+			"likes": 1900,
+			"dislikes": 95,
+			"comments": 190
+		},
+		"duration": "19:18",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-09T12:00:00"
+	},
+	{
+		"id": "10",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v10/400/300",
+		"title": "Sample video title 10",
+		"creator": {
+			"username": "user10",
+			"profilePicture": "https://randomuser.me/api/portraits/men/10.jpg"
+		},
+		"statistics": {
+			"views": 110000,
+			"likes": 2000,
+			"dislikes": 100,
+			"comments": 200
+		},
+		"duration": "20:20",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-10T12:00:00"
+	},
+	{
+		"id": "11",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v11/400/300",
+		"title": "Sample video title 11",
+		"creator": {
+			"username": "user11",
+			"profilePicture": "https://randomuser.me/api/portraits/women/11.jpg"
+		},
+		"statistics": {
+			"views": 111000,
+			"likes": 2100,
+			"dislikes": 105,
+			"comments": 210
+		},
+		"duration": "21:22",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-11T12:00:00"
+	},
+	{
+		"id": "12",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v12/400/300",
+		"title": "Sample video title 12",
+		"creator": {
+			"username": "user12",
+			"profilePicture": "https://randomuser.me/api/portraits/men/12.jpg"
+		},
+		"statistics": {
+			"views": 112000,
+			"likes": 2200,
+			"dislikes": 110,
+			"comments": 220
+		},
+		"duration": "22:24",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-12T12:00:00"
+	},
+	{
+		"id": "13",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v13/400/300",
+		"title": "Sample video title 13",
+		"creator": {
+			"username": "user13",
+			"profilePicture": "https://randomuser.me/api/portraits/women/13.jpg"
+		},
+		"statistics": {
+			"views": 113000,
+			"likes": 2300,
+			"dislikes": 115,
+			"comments": 230
+		},
+		"duration": "23:26",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-13T12:00:00"
+	},
+	{
+		"id": "14",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v14/400/300",
+		"title": "Sample video title 14",
+		"creator": {
+			"username": "user14",
+			"profilePicture": "https://randomuser.me/api/portraits/men/14.jpg"
+		},
+		"statistics": {
+			"views": 114000,
+			"likes": 2400,
+			"dislikes": 120,
+			"comments": 240
+		},
+		"duration": "24:28",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-14T12:00:00"
+	},
+	{
+		"id": "15",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v15/400/300",
+		"title": "Sample video title 15",
+		"creator": {
+			"username": "user15",
+			"profilePicture": "https://randomuser.me/api/portraits/women/15.jpg"
+		},
+		"statistics": {
+			"views": 115000,
+			"likes": 2500,
+			"dislikes": 125,
+			"comments": 250
+		},
+		"duration": "25:30",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-15T12:00:00"
+	},
+	{
+		"id": "16",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v16/400/300",
+		"title": "Sample video title 16",
+		"creator": {
+			"username": "user16",
+			"profilePicture": "https://randomuser.me/api/portraits/men/16.jpg"
+		},
+		"statistics": {
+			"views": 116000,
+			"likes": 2600,
+			"dislikes": 130,
+			"comments": 260
+		},
+		"duration": "26:32",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-16T12:00:00"
+	},
+	{
+		"id": "17",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v17/400/300",
+		"title": "Sample video title 17",
+		"creator": {
+			"username": "user17",
+			"profilePicture": "https://randomuser.me/api/portraits/women/17.jpg"
+		},
+		"statistics": {
+			"views": 117000,
+			"likes": 2700,
+			"dislikes": 135,
+			"comments": 270
+		},
+		"duration": "27:34",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-17T12:00:00"
+	},
+	{
+		"id": "18",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v18/400/300",
+		"title": "Sample video title 18",
+		"creator": {
+			"username": "user18",
+			"profilePicture": "https://randomuser.me/api/portraits/men/18.jpg"
+		},
+		"statistics": {
+			"views": 118000,
+			"likes": 2800,
+			"dislikes": 140,
+			"comments": 280
+		},
+		"duration": "28:36",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-18T12:00:00"
+	},
+	{
+		"id": "19",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v19/400/300",
+		"title": "Sample video title 19",
+		"creator": {
+			"username": "user19",
+			"profilePicture": "https://randomuser.me/api/portraits/women/19.jpg"
+		},
+		"statistics": {
+			"views": 119000,
+			"likes": 2900,
+			"dislikes": 145,
+			"comments": 290
+		},
+		"duration": "29:38",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-19T12:00:00"
+	},
+	{
+		"id": "20",
+		"video_type": "short",
+		"thumbnail": "https://picsum.photos/seed/v20/400/300",
+		"title": "Sample video title 20",
+		"creator": {
+			"username": "user20",
+			"profilePicture": "https://randomuser.me/api/portraits/men/20.jpg"
+		},
+		"statistics": {
+			"views": 120000,
+			"likes": 3000,
+			"dislikes": 150,
+			"comments": 300
+		},
+		"duration": "30:40",
+		"tags": ["tag1", "tag2", "tag3"],
+		"publishedAt": "2024-10-20T12:00:00"
+	}
+]

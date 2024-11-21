@@ -106,6 +106,7 @@ const Home = () => {
 									thumbnail={video.thumbnail}
 									creator={video.creator}
 									views={video.statistics.views}
+									duration={video.duration}
 									publishedAt={video.publishedAt}
 								/>
 							))}

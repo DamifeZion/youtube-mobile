@@ -16,6 +16,7 @@ type VideoPreviewProps = {
 		profilePicture: string;
 	};
 	views: number;
+	duration: number;
 	publishedAt: string | Date;
 	onEllipsisPress?: () => void;
 };
@@ -28,6 +29,7 @@ export const VideoPreview: React.FC<VideoPreviewProps> = ({
 	creator,
 	views,
 	publishedAt,
+	duration,
 	onEllipsisPress,
 }) => {
 	return (
@@ -38,6 +40,10 @@ export const VideoPreview: React.FC<VideoPreviewProps> = ({
 					resizeMode="cover"
 					className="w-full h-full"
 				/>
+
+				<Text className="absolute px-1.5 py-1 text-white rounded-md font-body-medium bg-black/60 bottom-2 right-2">
+					{duration}
+				</Text>
 			</View>
 
 			<Pressable className="flex-row gap-4 pt-2 px-containerHorizontal active:bg-muted">

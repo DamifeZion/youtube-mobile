@@ -20,6 +20,7 @@ import { Button } from "@/components/ui/button";
 
 const TabsLayout = () => {
 	const pathname = usePathname();
+	const isShortsPage = pathname === "/shorts";
 	const { themeColor, themeShadow } = useTheme();
 
 	const viewClassName = (focused: boolean, className?: string) => {
@@ -37,10 +38,13 @@ const TabsLayout = () => {
 			"text-sm leading-tight text-muted-foreground",
 			{
 				"text-primary": focused,
+				"text-white": isShortsPage
 			},
 			className,
 		);
 	};
+
+	const iconColor = (focused: boolean) => isShortsPage ? themeColor.white : focused ? themeColor.foreground : themeColor.muted_foreground
 
 	useNavigateHomeOnBack(pathname, ["shorts", "create-video"]);
 
@@ -51,7 +55,7 @@ const TabsLayout = () => {
 				tabBarShowLabel: false,
 				tabBarStyle: {
 					height: UI.layout.tabBarHeight,
-					backgroundColor: themeColor.background,
+					backgroundColor: !isShortsPage ? themeColor.background : UI.color.dark.background,
 					...themeShadow.sm,
 				},
 				tabBarIconStyle: {
@@ -67,11 +71,7 @@ const TabsLayout = () => {
 						<View className={viewClassName(focused)}>
 							<MySVG
 								name={focused ? HOME_SOLID : HOME_OUTLINE}
-								color={
-									focused
-										? themeColor.foreground
-										: themeColor.muted_foreground
-								}
+								color={iconColor(focused)}
 								size={20}
 							/>
 
@@ -89,11 +89,7 @@ const TabsLayout = () => {
 							<View className="-mt-1.5">
 								<MySVG
 									name={SHORTS_OUTLINE}
-									color={
-										focused
-											? themeColor.foreground
-											: themeColor.muted_foreground
-									}
+									color={iconColor(focused)}
 									fill="#000"
 									size={30}
 								/>
@@ -117,11 +113,13 @@ const TabsLayout = () => {
 						<View className={viewClassName(focused)}>
 							<Button
 								onPress={() => router.push("/(tabs)/create-video")}
-								className="rounded-full native:w-12 native:h-12 bg-secondary dark:bg-background dark:border-primary dark:border"
+								className={cn("rounded-full native:w-12 native:h-12 bg-black/10 dark:bg-background", {
+									"bg-white/10": isShortsPage
+								})}
 							>
 								<MySVG
 									name={CREATE_VIDEO}
-									color={themeColor.foreground}
+									color={isShortsPage ? themeColor.white : themeColor.foreground}
 									size={18}
 								/>
 							</Button>
@@ -139,11 +137,7 @@ const TabsLayout = () => {
 								name={
 									focused ? SUBSCRIPTION_SOLID : SUBSCRIPTION_OUTLINE
 								}
-								color={
-									focused
-										? themeColor.foreground
-										: themeColor.muted_foreground
-								}
+								color={iconColor(focused)}
 							/>
 
 							<Text className={textClassName(focused)}>
@@ -161,11 +155,7 @@ const TabsLayout = () => {
 						<View className={viewClassName(focused)}>
 							<MySVG
 								name={focused ? LIBRARY_SOLID : LIBRARY_OUTLINE}
-								color={
-									focused
-										? themeColor.foreground
-										: themeColor.muted_foreground
-								}
+								color={iconColor(focused)}
 							/>
 							<Text className={textClassName(focused)}>Library</Text>
 						</View>

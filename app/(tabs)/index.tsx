@@ -51,7 +51,7 @@ const Home = () => {
 
 						return (
 							<CategoryChip
-								key={generateUniqueKey(index)}
+								key={generateUniqueKey()}
 								isActive={isActive}
 								text={item}
 								onPress={() => setCategory(item)}
@@ -76,7 +76,7 @@ const Home = () => {
 					// SHORTS
 					return (
 						<Section
-							key={generateUniqueKey(index)}
+							key={generateUniqueKey()}
 							className={cn("mt-4 gap-2", {
 								"mt-10": index !== 0,
 							})}
@@ -85,9 +85,9 @@ const Home = () => {
 
 							<View className="flex-row flex-wrap gap-y-3 gap-x-3">
 								{/* Render 4 Shorts */}
-								{item.data.map((short: any, shortIndex: number) => (
+								{item.data.map((short: any) => (
 									<ShortPreviewCard
-										key={generateUniqueKey(`shorts-${shortIndex}`)}
+										key={generateUniqueKey()}
 										title={short.title}
 										thumbnail={short.thumbnail}
 									/>
@@ -99,9 +99,9 @@ const Home = () => {
 					// RENDER 5 VIDEOS
 					return (
 						<Section className="gap-10 mt-10 !px-0">
-							{item.data.map((video: any, videoIndex: number) => (
+							{item.data.map((video: any) => (
 								<VideoPreview
-									key={`video-${generateUniqueKey(videoIndex)}`}
+									key={generateUniqueKey()}
 									title={video.title}
 									thumbnail={video.thumbnail}
 									creator={video.creator}

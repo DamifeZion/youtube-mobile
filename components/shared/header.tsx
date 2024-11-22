@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import { StatusBar } from "expo-status-bar";
+import { StatusBar, StatusBarStyle } from "expo-status-bar";
 import { useTheme } from "@/hooks/shared/use-theme";
 import { useSelector } from "react-redux";
 import { RootState } from "@/services/store";
@@ -27,6 +27,7 @@ type HeaderProps = {
 	hideStatusBar?: boolean;
 	rightSectionClassName?: string;
 	statusBarBackgroundColor?: string;
+	statusBarStyle?: StatusBarStyle;
 	hideStatusBarComponent?: boolean;
 	onLayout?: (e: LayoutChangeEvent) => void;
 };
@@ -40,6 +41,7 @@ export const Header: React.FC<HeaderProps> = ({
 	hideStatusBar,
 	rightSectionClassName,
 	statusBarBackgroundColor,
+	statusBarStyle,
 	onLayout,
 }) => {
 	const pathname = usePathname();
@@ -60,8 +62,10 @@ export const Header: React.FC<HeaderProps> = ({
 			{!hideStatusBarComponent && (
 				<StatusBar
 					hidden={hideStatusBar}
+					style={statusBarStyle}
+
 					backgroundColor={
-						statusBarBackgroundColor || resolvedTheme === "dark"
+						statusBarBackgroundColor ? statusBarBackgroundColor : resolvedTheme === "dark"
 							? UI.adjustOpacity(themeColor.background, 0.5)
 							: themeColor.background
 					}
@@ -122,18 +126,30 @@ export const Header: React.FC<HeaderProps> = ({
 				<Button
 					size="icon"
 					variant="ghost"
-					className="rounded-full native:h-14 native:w-14"
+					className={cn("rounded-full native:h-14 native:w-14", {
+						"active:bg-white/5": pathname === "/shorts"
+					})}
 				>
-					<SVG name={SEARCH} color={themeColor.foreground} />
+					<SVG
+						name={SEARCH}
+						color={pathname === "/shorts" ? themeColor.white : themeColor.foreground}
+					/>
 				</Button>
 
 				{pathname === "/shorts" && (
 					<Button
 						size="icon"
 						variant="ghost"
-						className="rounded-full native:h-14 native:w-14"
+						className={cn("rounded-full native:h-14 native:w-14", {
+							"active:bg-muted/5": pathname === "/shorts"
+						})}
 					>
-						<LucideIcon name="EllipsisVertical" />
+						<LucideIcon
+							name="EllipsisVertical"
+							className={cn("text-foreground", {
+								"text-white": pathname === "/shorts"
+							})}
+						/>
 					</Button>
 				)}
 			</View>

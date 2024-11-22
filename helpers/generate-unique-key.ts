@@ -1,3 +1,3 @@
-export const generateUniqueKey = (key: string | number) => {
-	return `key-${Date.now()}-${key}`;
-};
+import uuid from "react-native-uuid";
+
+export const generateUniqueKey = () => uuid.v4();

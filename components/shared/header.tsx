@@ -45,6 +45,8 @@ export const Header: React.FC<HeaderProps> = ({
 	onLayout,
 }) => {
 	const pathname = usePathname();
+	const isShortsPage = pathname === "/shorts";
+
 	const { themeColor } = useTheme();
 	const { resolvedTheme } = useSelector(
 		(state: RootState) => state.themeSlice,
@@ -65,9 +67,13 @@ export const Header: React.FC<HeaderProps> = ({
 					style={statusBarStyle}
 
 					backgroundColor={
-						statusBarBackgroundColor ? statusBarBackgroundColor : resolvedTheme === "dark"
-							? UI.adjustOpacity(themeColor.background, 0.5)
-							: themeColor.background
+						isShortsPage
+							? "transparent"
+							: statusBarBackgroundColor
+								? statusBarBackgroundColor
+								: resolvedTheme === "dark"
+									? UI.adjustOpacity(themeColor.background, 0.5)
+									: themeColor.background
 					}
 				/>
 			)}

@@ -7,6 +7,9 @@ module.exports = {
 	presets: [require("nativewind/preset")],
 	theme: {
 		extend: {
+			fontSize: {
+				md: "16px",
+			},
 			padding: {
 				containerHorizontal: "8px",
 			},
@@ -20,6 +23,7 @@ module.exports = {
 				"body-black": "youtube-black",
 			},
 			colors: {
+				light_blue: "var(--light-blue)",
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
 				card: {

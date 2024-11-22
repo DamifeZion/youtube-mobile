@@ -20,7 +20,7 @@ export const ShortPreviewCard: React.FC<ShortsPreviewCardProps> = ({
 	return (
 		<Pressable
 			onPress={onPress}
-			className="w-[48.5%] relative overflow-hidden rounded-md native:h-[280px]"
+			className="w-[48.5%] relative overflow-hidden rounded-md native:h-[260px]"
 		>
 			<Image
 				source={{ uri: thumbnail }}

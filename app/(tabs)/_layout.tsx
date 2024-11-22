@@ -14,6 +14,7 @@ import {
 	SUBSCRIPTION_SOLID,
 	LIBRARY_OUTLINE,
 	LIBRARY_SOLID,
+	SHORTS_SOLID,
 } from "@/assets/icons/icons";
 import useNavigateHomeOnBack from "@/hooks/shared/use-navigate-home-on-back";
 import { Button } from "@/components/ui/button";
@@ -35,7 +36,7 @@ const TabsLayout = () => {
 
 	const textClassName = (focused: boolean, className?: string) => {
 		return cn(
-			"text-sm leading-tight text-muted-foreground",
+			"!text-sm leading-tight text-muted-foreground",
 			{
 				"text-primary": focused,
 				"text-white": isShortsPage
@@ -85,17 +86,17 @@ const TabsLayout = () => {
 				name="shorts"
 				options={{
 					tabBarIcon: ({ focused }) => (
-						<View className={viewClassName(focused)}>
-							<View className="-mt-1.5">
+						<View className={viewClassName(focused, `${focused ? "" : '-mt-1.5'}`)}>
+							<View>
 								<MySVG
-									name={SHORTS_OUTLINE}
+									name={focused ? SHORTS_SOLID : SHORTS_OUTLINE}
 									color={iconColor(focused)}
 									fill="#000"
-									size={30}
+									size={focused ? 20 : 26}
 								/>
 							</View>
 
-							<Text className={textClassName(focused, "-mt-1.5")}>
+							<Text className={textClassName(focused, `${focused ? "" : "-mt-1"}`)}>
 								Shorts
 							</Text>
 						</View>
@@ -113,7 +114,7 @@ const TabsLayout = () => {
 						<View className={viewClassName(focused)}>
 							<Button
 								onPress={() => router.push("/(tabs)/create-video")}
-								className={cn("rounded-full native:w-12 native:h-12 bg-black/10 dark:bg-background", {
+								className={cn("rounded-full native:w-12 native:h-12 bg-black/10 dark:bg-white/10", {
 									"bg-white/10": isShortsPage
 								})}
 							>

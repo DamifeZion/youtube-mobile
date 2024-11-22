@@ -7,6 +7,7 @@ const generalColors = {
 	shadow: "rgb(0, 0, 0)",
 	black: "rgb(0, 0, 0)",
 	white: "rgb(255, 255, 255)",
+	light_blue: "#5CA4F8",
 };
 
 const light = {

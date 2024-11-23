@@ -19,7 +19,7 @@ const persistConfig = {
 
 	// EXPO GO Storage
 	storage: AsyncStorage,
-	whitelist: ["themeSlice", "userSlice", "profileSlice"],
+	whitelist: ["themeSlice", "userSlice", "shortsSlice", "profileSlice"],
 };
 
 const rootReducer = combineReducers({

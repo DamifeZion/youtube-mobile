@@ -30,6 +30,10 @@ const Shorts = () => {
 		creator: {
 			id: item.creator.username,
 			...item.creator
+		},
+		audio: {
+			...item.audio,
+			id: item.audio.title,
 		}
 	}))
 

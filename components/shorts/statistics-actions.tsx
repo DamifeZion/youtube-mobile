@@ -8,6 +8,7 @@ import { COMMENT, DISLIKE, LIKE, REMIX, SHARE } from "@/assets/icons/icons";
 import { toggleShortDisLike, toggleShortLike } from "@/services/slices/shorts-slice";
 import { ShortVideoType } from "./shorts-video";
 import { RootState } from "@/services/store";
+import { router } from "expo-router";
 
 type StatisticsActionsProps = {
    short: ShortVideoType;
@@ -85,7 +86,15 @@ export const StatisticsActions: React.FC<StatisticsActionsProps> = ({
             </Text>
          </Pressable>
 
-         <Pressable className="mt-3">
+         <Pressable
+            onPress={() => router.push({
+               pathname: "/pages/short-sound-details/[soundID]",
+               params: {
+                  soundID: short.audio.id
+               }
+            })}
+            className="mt-3"
+         >
             <Image
                source={{
                   uri: short.audio.profilePicture

@@ -34,6 +34,7 @@ export type ShortVideoType = {
       comments: number;
    };
    audio: {
+      id: string;
       title: string;
       artist: string;
       shortsUsingThisAudio: number;

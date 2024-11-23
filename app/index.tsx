@@ -29,5 +29,10 @@ export default function Index() {
 	// );
 
 	//Below is default
-	return <Redirect href="/(tabs)/shorts" />;
+	return <Redirect href={{
+		pathname: "/pages/short-sound-details/[soundID]",
+		params: {
+			soundID: "Science card."
+		}
+	}} />;
 }
